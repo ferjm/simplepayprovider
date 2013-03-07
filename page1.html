@@ -3,9 +3,16 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
+    <script src="pay.js"></script>
 		<h2>navigator.mozPay test provider - Page 1</h2>
-		<button onclick="paymentSuccess()">Success</button>
-		<button onclick="paymentFailed()">Error</button>
-		<button onclick="window.location.href='page2.html'">Go to page 2</button>
+    <div>
+  		<button onclick="paymentSuccess()">Success</button>
+	  	<button onclick="paymentFailed()">Error</button>
+		  <button onclick="window.location.href='page2.html'">Go to page 2</button>
+    </div>
+    <div>
+      <button onclick="pay(mockJWT)">Embedded call to navigator.mozPay()</button>
+    </div>
+    <div id=result></div>
 	</body>
 </html>

@@ -1,11 +1,18 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <script src="pay.js"></script>
 	</head>
 	<body>
-		<h2>navigator.mozPay test provider - Page 2</h2>
-		<button onclick="paymentSuccess()">Success</button>
-		<button onclick="paymentFailed()">Error</button>
-		<button onclick="window.location.href='page1.html'">Go back to page 1</button>
+    <div>
+  		<h2>navigator.mozPay test provider - Page 2</h2>
+	  	<button onclick="paymentSuccess()">Success</button>
+		  <button onclick="paymentFailed()">Error</button>
+		  <button onclick="window.location.href='page1.html'">Go back to page 1</button>
+    </div>
+    <div>
+      <button onclick="pay(mockJWT)">Embedded call to navigator.mozPay()</button>
+    </div>
+    <div id="result"></div>
 	</body>
 </html>
