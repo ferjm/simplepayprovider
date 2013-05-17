@@ -13,5 +13,5 @@ function pay(JWTs) {
     document.getElementById("result").innerHTML = "Payment error " + request.error.name;
   };
 }
-console.log("======== " + PaymentProvider + " ========\n");
-console.log("******** " + JSON.stringify(PaymentProvider) + " =========\n");
+console.log("======== " + mozPaymentProvider + " ========\n");
+console.log("******** " + JSON.stringify(mozPaymentProvider) + " =========\n");
