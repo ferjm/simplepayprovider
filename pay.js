@@ -14,3 +14,5 @@ function pay(JWTs) {
   };
 }
 
+dump("======== " + PaymentProvider + " ========\n");
+dump("******** " + JSON.stringify(PaymentProvider) + " =========\n");
