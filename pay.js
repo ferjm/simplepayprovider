@@ -13,5 +13,7 @@ function pay(JWTs) {
     document.getElementById("result").innerHTML = "Payment error " + request.error.name;
   };
 }
-console.log("======== " + mozPaymentProvider.successPayment + " ========\n");
-console.log("******** " + JSON.stringify(mozPaymentProvider) + " =========\n");
+
+function showICC(icc) {
+  console.log("ICC " + icc);
+}
