@@ -15,5 +15,5 @@ function pay(JWTs) {
 }
 
 function showICC(icc) {
-  console.log("ICC " + icc);
+  console.log("ICC " + icc[0]);
 }
