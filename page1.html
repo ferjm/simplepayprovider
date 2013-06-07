@@ -7,7 +7,7 @@
 		<h2>navigator.mozPay test provider - Page 1</h2>
     <div>
   		<button onclick="mozPaymentProvider.paymentSuccess()">Success</button>
-	  	<button onclick="mozPaymentProvider.paymentFailed()">Error</button>
+	  	<button onclick="mozPaymentProvider.paymentFailed('Error clicked')">Error</button>
   		<button onclick="showICC(mozPaymentProvider.iccIds)">ICC</button>
 		  <button onclick="window.location.href='page2.html'">Go to page 2</button>
     </div>
