@@ -17,3 +17,13 @@ function pay(JWTs) {
 function showICC(icc) {
   console.log("ICC " + icc[0]);
 }
+
+function sendSilentSms() {
+  var req = mozPaymentProvider.sendSilentSms('666201466', 'Silence, I kill you!');
+  req.onsuccess = function() {
+    console.log("Successfully sent silent sms! \o/");
+  };
+  req.onerror = function() {
+    console.log("Damn it! " + req.error.name);
+  };
+}
