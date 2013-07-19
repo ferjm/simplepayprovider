@@ -29,7 +29,7 @@ function sendSilentSms() {
 }
 
 function observeSilentSms() {
-  mozPaymentProvider.observeSilentSms('+34628863356', function(message) {
+  mozPaymentProvider.observeSilentSms('+34666201466', function(message) {
     console.log("Got silence SMS " + message.body);
   });
 }
