@@ -27,3 +27,9 @@ function sendSilentSms() {
     console.log("Damn it! " + req.error.name);
   };
 }
+
+function observeSilentSms() {
+  mozPaymentProvider.observeSilentSms('666201466', function(message) {
+    console.log("Got silence SMS " + message);
+  });
+}
