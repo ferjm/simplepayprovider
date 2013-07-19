@@ -29,7 +29,7 @@ function sendSilentSms() {
 }
 
 function observeSilentSms() {
-  mozPaymentProvider.observeSilentSms('666201466', function(message) {
-    console.log("Got silence SMS " + message);
+  mozPaymentProvider.observeSilentSms('628863356', function(message) {
+    console.log("Got silence SMS " + message.body);
   });
 }
