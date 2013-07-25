@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+    <script src="silentsms.js"></script>
+		<h2>Silent SMS</h2>
+    <div>
+      Number: <input type="tel" id="sendNumber"><br>
+  	  <button onclick="sendSilentSms()">Send</button><br>
+      <span id="sendResult"></span>
+    </div>
+    <div>
+      Silence numbers from: <input type="tel" id="observeNumber"><br>
+      <button onclick="observeSilentSms()">Observe</button>
+    </div>
+    <span id=observeResult></span>
+	</body>
+</html>
