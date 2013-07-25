@@ -9,10 +9,13 @@
   		<button onclick="mozPaymentProvider.paymentSuccess()">Success</button>
 	  	<button onclick="mozPaymentProvider.paymentFailed('Error clicked')">Error</button>
   		<button onclick="showICC(mozPaymentProvider.iccIds)">ICC</button>
-  		<button onclick="sendSilentSms()">SendSMS</button>
-      <button onclick="observeSilentSms()">ObserveSMS</button>
+    </div>
+    <br>
+    <div>   
+      <button onclick="window.location.href='silentsms.html'">Go to silent SMS page</button>
 		  <button onclick="window.location.href='page2.html'">Go to page 2</button>
     </div>
+    <br>
     <div>
       <button onclick="pay(mockJWT)">Embedded call to navigator.mozPay()</button>
     </div>
