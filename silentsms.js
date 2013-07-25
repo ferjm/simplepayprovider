@@ -13,7 +13,7 @@ function sendSilentSms() {
 function observeSilentSms() {
   var number = document.getElementById('observeNumber').value;
   var observeResult = deocument.getElementById('observeResult');
-  mozPaymentProvider.observeSilentSms(var number, function(message) {
+  mozPaymentProvider.observeSilentSms(number, function(message) {
     observeResult.textContent = 'Got silence SMS from ' + message.sender +
                                 ' -> ' + message.body;
   });
