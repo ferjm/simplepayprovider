@@ -10,6 +10,7 @@ function sendSilentSms() {
   };
 }
 
+
 function observeSilentSms() {
   var number = document.getElementById('observeNumber').value;
   var observeResult = deocument.getElementById('observeResult');
