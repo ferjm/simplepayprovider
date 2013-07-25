@@ -14,7 +14,7 @@ var observeResult = document.getElementById('observeResult');
 var onsms = function(message) {
   observeResult.textContent = 'Got silence SMS from ' + message.sender +
                               ' -> ' + message.body;
-});
+};
 
 function observeSilentSms() {
   var number = document.getElementById('observeNumber').value;
