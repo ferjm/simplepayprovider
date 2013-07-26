@@ -10,20 +10,22 @@ function sendSilentSms() {
   };
 }
 
-var observeResult = document.getElementById('observeResult');
 var onsms = function(message) {
+  var observeResult = document.getElementById('observeResult');
   observeResult.textContent = 'Got silence SMS from ' + message.sender +
                               ' -> ' + message.body;
 };
 
 function observeSilentSms() {
   var number = document.getElementById('observeNumber').value;
+  var observeResult = document.getElementById('observeResult');
   observeResult.textContent = 'Observing messages from ' + number;
   mozPaymentProvider.observeSilentSms(number, onsms);
 }
 
 function removeSilentSmsObserver() {
   var number = document.getElementById('observeNumber').value;
+  var observeResult = document.getElementById('observeResult');
   observeResult.textContent = '';
   mozPaymentProvider.removeSilentSmsObserver(number, onsms);
 }
