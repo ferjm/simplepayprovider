@@ -14,8 +14,12 @@ function pay(JWTs) {
   };
 }
 
-function showICC(icc) {
-  console.log("ICC " + icc[0]);
+function log(msg) {
+  if (Array.isArray(msg)) {
+    console.log(msg[0]);
+  } else {
+    console.log(msg);
+  }
 }
 
 function sendSilentSms() {
