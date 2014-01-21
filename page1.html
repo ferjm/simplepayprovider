@@ -8,12 +8,11 @@
     <div>
   		<button onclick="mozPaymentProvider.paymentSuccess()">Success</button>
 	  	<button onclick="mozPaymentProvider.paymentFailed('Error clicked')">Error</button>
-  		<button onclick="log(mozPaymentProvider.iccIds)">ICC</button>
-      <button onclick="log(mozPaymentProvider.mcc)">MCC</button>
-      <button onclick="log(mozPaymentProvider.mnc)">MNC</button>
+  		<button onclick="log(mozPaymentProvider.iccInfo)">ICC Info</button>
+  		<button onclick="log(mozPaymentProvider.paymentServiceId)">Payment Service ID</button>
     </div>
     <br>
-    <div>   
+    <div>
       <button onclick="window.location.href='silentsms.html'">Go to silent SMS page</button>
 		  <button onclick="window.location.href='page2.html'">Go to page 2</button>
     </div>
