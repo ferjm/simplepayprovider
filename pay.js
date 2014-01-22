@@ -33,3 +33,8 @@ function observeSilentSms() {
     console.log("Got silence SMS " + message.body);
   });
 }
+
+function setPaymentServiceId() {
+  var paymentServiceId = document.getElementById("serviceid").value;
+  mozPaymentProvider.paymentServiceId = paymentServiceId;
+}
